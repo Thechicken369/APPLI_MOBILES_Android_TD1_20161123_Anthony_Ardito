@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Cardview_pla"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:layout_weight="7.95">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView_animal"
+                android:cropToPadding="true"
+                android:elevation="0dp"
+                android:baselineAlignBottom="false"
+                android:foregroundGravity="left" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="109dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/textVewName"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:id="@+id/textView_espece"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/textView_descripton"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
